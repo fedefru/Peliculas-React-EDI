@@ -8,7 +8,7 @@ import { Genero } from '../componentes/AgregarPelicula';
 const NavbarHome = () => {
     return <div>
         <Navbar collapseOnSelect expand="lg" className="navbar" variant="dark">
-            <Navbar.Brand href="#home">Peliculon</Navbar.Brand>
+            <Navbar.Brand as={Link} to={ROUTES.INICIO}>Peliculon</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
